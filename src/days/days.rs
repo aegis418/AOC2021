@@ -1,5 +1,5 @@
 #[derive(Debug, Copy, Clone)]
-enum Day {
+pub enum Day {
     None,
     One,
     Two,
@@ -61,7 +61,7 @@ impl From<i32> for Day  {
     }
 }
 
-pub fn run_day(day: Day) -> Result<(), std::Error> {
+pub fn run_day(day: Day) -> Result<(), String> {
     todo!();
     return Ok(());
 }
