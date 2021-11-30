@@ -9,11 +9,18 @@ fn main() {
     println!("AoC Runner");
 
     print!("Day to run: ");
-    io::stdout().flush();
+    let _ = io::stdout().flush();
     let mut day = String::new();
-    io::stdin().read_line(&mut day).unwrap();
-    println!("{}", format!("Running day {}...", day));
-    match run_day(Day::from(day.parse::<i32>().unwrap())) {
+    io::stdin().read_line(&mut day);
+    println!("{}", format!("Running day {}", day));
+    let day_num = match day.trim().parse::<i32>() {
+        Ok(n) => n,
+        Err(e) => {
+            println!("{}", e);
+            return;
+        }
+    };
+    match run_day(Day::from(day_num)) {
         Ok(_) => (),
         Err(e) => (),
     };
