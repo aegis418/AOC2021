@@ -1,6 +1,10 @@
+use crate::days::{
+    day0::*
+};
+
 #[derive(Debug, Copy, Clone)]
 pub enum Day {
-    None,
+    Zero,
     One,
     Two,
     Three,
@@ -56,14 +60,14 @@ impl From<i32> for Day  {
             23 => Day::TwentyThree,
             24 => Day::TwentyFour,
             25 => Day::TwentyFive,
-            _ => Day::None
+            _ => Day::Zero
         }
     }
 }
 
 pub fn run_day(day: Day) -> Result<(), String> {
     match day {
-        Day::None => return Err(String::from("Invalid Day")),
+        Day::Zero => { let _ = day0::day_0(); },
         Day::One => {}
         Day::Two => {}
         Day::Three => {}
