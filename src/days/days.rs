@@ -62,6 +62,33 @@ impl From<i32> for Day  {
 }
 
 pub fn run_day(day: Day) -> Result<(), String> {
-    todo!();
+    match day {
+        Day::None => return Err(String::from("Invalid Day")),
+        Day::One => {}
+        Day::Two => {}
+        Day::Three => {}
+        Day::Four => {}
+        Day::Five => {}
+        Day::Six => {}
+        Day::Seven => {}
+        Day::Eight => {}
+        Day::Nine => {}
+        Day::Ten => {}
+        Day::Eleven => {}
+        Day::Twelve => {}
+        Day::Thirteen => {}
+        Day::Fourteen => {}
+        Day::Fifteen => {}
+        Day::Sixteen => {}
+        Day::Seventeen => {}
+        Day::Eighteen => {}
+        Day::Nineteen => {}
+        Day::Twenty => {}
+        Day::TwentyOne => {}
+        Day::TwentyTwo => {}
+        Day::TwentyThree => {}
+        Day::TwentyFour => {}
+        Day::TwentyFive => {}
+    }
     return Ok(());
 }

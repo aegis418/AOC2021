@@ -21,7 +21,7 @@ fn main() {
         }
     };
     match run_day(Day::from(day_num)) {
-        Ok(_) => (),
-        Err(e) => (),
+        Ok(_) => println!("Done"),
+        Err(e) => println!("{}", e),
     };
 }
