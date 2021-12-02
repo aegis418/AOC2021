@@ -1,6 +1,7 @@
 use crate::days::{
     day0::*,
-    day1::*
+    day1::*,
+    day2::*
 };
 
 #[derive(Debug, Copy, Clone)]
@@ -70,7 +71,7 @@ pub fn run_day(day: Day) -> Result<(), String> {
     match day {
         Day::Zero => { let _ = day0::day_0(); },
         Day::One => { let _ = day1::day_1(); let _ = day1::day_1_pt2(); }
-        Day::Two => {}
+        Day::Two => { let _ = day2::day2(); let _ = day2::day2_pt2(); }
         Day::Three => {}
         Day::Four => {}
         Day::Five => {}
